@@ -1,0 +1,167 @@
+ 
+According to the PDF file (socket programming), There are two communication protocols that one can use for socket programming:
+Question 1 options:
+
+Datagram communication
+
+Stream communication.
+
+Dynamic host control protocol
+
+Domain name services
+Question 2 (1 point) 
+The two key classes from the java.net package used in the creation of server and client programs are:
+Question 2 options:
+
+Server
+
+ServerSocket
+
+Client
+
+ClientSocket
+Question 3 (1 point) 
+What is the port number for SMTP?
+Question 3 options:
+
+23
+
+22
+
+25
+
+53
+Question 4 (1 point) 
+The two key classes from the java.net package used in the creation of server and client programs are:
+Question 4 options:
+
+DatagramPacket
+
+DatagramSocket
+
+Socket one
+Question 5 (1 point) 
+During the SBA practice test, what was the increment number?
+Question 5 options:
+
+16
+
+32
+
+64
+
+128
+Question 6 (1 point) 
+What is the first step, when a computer comes onto the network and looks for a DHCP server?
+Question 6 options:
+
+DHCP discover
+
+DHCP offer
+
+DHCP request
+
+DHCP acknowledge
+Question 7 (1 point) 
+Which of the following protocols, would send an email?
+Question 7 options:
+
+POP
+
+HTTP
+
+SMTP
+
+DNS
+Question 8 (1 point) 
+The socket is used to identify the server and service being requested by the client
+Question 8 options:
+	True
+	False
+Question 9 (1 point) 
+Which of the following protocols works at the application layer? Select all that apply
+Question 9 options:
+
+HTTP
+
+DNS
+
+FTP
+
+SMTP
+Question 10 (1 point) 
+TCP is useful for implementing network services -- such as remote login (login, telnet) and file transfer FTP.
+Question 10 options:
+	True
+	False
+Question 11 (1 point) 
+When programming a client, you must follow these steps (select all that apply)
+Question 11 options:
+
+Open a socket.
+
+Open an input and output stream to the socket.
+
+Read from and write to the socket according to the server's protocol.
+
+Clean up.
+Question 12 (1 point) 
+During the SBA practice test, how many bits did you borrow from the host?
+Question 12 options:
+
+2
+
+3
+
+4
+
+5
+Question 13 (1 point) 
+What is the job of the presentation layer?
+Question 13 options:
+
+Compressing
+
+Encrypting
+
+Formatting
+
+All of the above
+Question 14 (1 point) 
+What is the port number for DNS?
+Question 14 options:
+
+21
+
+22
+
+53
+
+80
+Question 15 (1 point) 
+What are the well-known ports?
+Question 15 options:
+
+0 to 1023
+
+10 to 2300
+
+0 to 4450
+
+All the above
+Question 16 (1 point) 
+During the SBA practice test, what was the subnet mask for the third network?
+Question 16 options:
+
+255.255.255.192
+
+255.255.192.255
+
+255.255.255.0
+
+255.255.255.224
+Question 17 (1 point) 
+The combination of the source IP address and source port number, or the destination IP address and destination port number is known as a socket.
+Question 17 options:
+	True
+	False

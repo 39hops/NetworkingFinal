@@ -1,0 +1,97 @@
+IPv6:
+    - IPv4 running out of addresses 
+    - IPv6 is 128 bit 
+    - Migration Techniques:
+        - Dual Stack: 
+            - Devices run both IPv4 and IPv6 
+        - Tunneling:
+            - A method of transporting an IPv6 packet to an IPv4 network 
+        - Translation:
+            - NAT64 allows IPv6-enabled devices to communicate with IPv4 devices using a translation technique 
+
+IPv6 Formatting:
+    - 128 bits in length and written in hex 
+    - Not case-sensitive 
+    - Preferred format is x:x:x:x:x:x:x:x
+    - Each 'x' consisting of four hec numbers or 16 bit binary numbers 
+    - EX: de52 = 1101 1110 0101 0010 
+    - 8 * 16 bits = 128 bits 
+    - Example:
+        - 2001:0db8:0000:1111:0000:0000:0000:0200
+
+Rule 1 Omit Leading Zero:
+    - 01ab -> 1ab 
+    - 09f0 -> 9f0 
+    - 0a00 -> a00
+    - 00ab -> ab 
+    - Only applies to leading 0s, not trailing 0s 
+
+Rule 2 - Double Colon:
+    - 2001:db8:cafe:1:0:0:0:1 -> 2001:db8:cade:1::1
+
+Unicast - Multicast - Anycast:
+    - Three broad categories of IPv6 addresses:
+        - Unicast:
+            - Uniquely identifies an interface on an IPv6-enabled device 
+        - Multicast:
+            - Used to send a single IPv6 packet to multiple destinations 
+        - Anycast:
+            - IPv6 unicast address that be be assigned to multiple devices 
+            - A packet sent to an anycast address is routed to the nearest device having that address 
+
+Prefix Length:
+    - Represented in slash notation and is used to indicate the network portion 
+    - The IPv6 prefix length can range from 0 - 128 
+    - Recommended for LANs and other networks is /64 
+
+Types of Unicast Addresses:
+    1. Global Unique Address (GUA):
+        - Similar to a public IPv4
+        - Globally unique, internet-routable addresses
+    2. Link-Local Addresses (LLA):
+        - Required for every IPv6 device and used to communicate with other devices on the same local link 
+        - LLAs are NOT routable 
+        - Confined to a single link 
+
+Unique Local Address:
+    - IPv6 unique local addresses (fc00::/7 - fdff::/7) are similar to RFC 1918 private addresses for IPv4 
+    - However, they have some differences:
+        - Unique local addresses are used for local addressing within a site of between limited number of sites 
+        - Unique local addresses can be used for devices that will never need to access another network 
+        - Unique local addresses are NOT globally routed or translated to a global IPv6 
+
+IPv6 GUA:
+    1. IPv6 global unicast addresses (GUAs) are globally unique and routable on the IPv6 internet
+        - Currently, only GUAs with the first three bits of 001 or 2000::/3 are being assigned
+    
+    GUA Structure:
+        - Global Routing Prefix:
+            - The global routing prefix is the prefix, or network portion of the address that is assigned by the provider, such as an ISP, to a customer
+            - The global routing prefix will vary depending on ISP policies
+        - Subnet ID:
+            - Subnet ID field is the area between the global routing prefix and the interface ID 
+            - The Subnet ID is used by an organization to identify subnets within it's site 
+        - Interface ID:
+            - The IPv6 interface ID is equivalent to the host portion of an IPv4 address 
+            - It is recommended that in most cases /64 subnets should be used, which creates a 64 bit interface ID
+    2. IPv6 LLA:
+        - An IPv6 link-local address enables a device to communicate with other IPv6 enabled devices on the same link and only on that link 
+        - Packets with a source or destination LLA cannot be routed 
+        - Every IPv6 enabled network interface must have an LLA 
+        - If an LLA is not configured manually on an interface, the device will automatically create one 
+        - IPv6 LLAs are in the fe80::/10 range 
+
+Dynamic Addressing for IPv6 GUAs - RS and RA Messages:
+    - 
+    
+
+
+EUI-64 Process vs Randomly Generated (EUI):
+    - When the RA message is either SLAAC or SLAAC with stateless DHCPv6, the client must generate it's own interface ID 
+    - The interface ID can be created using the EUI-64 (Extended Unique Identified) process or a randomly generated 64 bit number  
+    
+
+
+
+
+                

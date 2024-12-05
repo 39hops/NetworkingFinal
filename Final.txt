@@ -1,0 +1,205 @@
+q1 - q10
+subnet an ip
+class c
+give all details
+
+255.255.255.0/24
+
+- how many useable ips for that subnet mask
+- first last usable hosts
+- subnet mask
+- what is / notation
+- broadcast for that network
+- how many bits did you borrow
+- how many bits left over for host
+- how many useable hosts in the subnet (usable ip address)
+- max number of subnets
+
+11-13:
+socket programming
+
+14:
+layer 2 broadcast
+ff:ff:ff:ff:ff
+
+know about ipv6:
+- unicast
+- multicast
+- anycast
+
+ipv4:
+- unicast
+- multicast
+- broadcast
+
+IPV6:
+DF26: 16 bits each
+
+16:
+- IPv6:
+- Pay attention to the hex numbers in the IPv6 number
+- will ask you which is a valid ipv6
+
+17: Shorten an ipv6
+:: and 00 (leading zeros)
+
+18:
+- Know about the linked local in IPv6:
+- fe80::/64
+
+19:
+Another socket programming:
+- Knowing about Socket, SocketServer
+
+20:
+Expand a shortened ipv6 address
+
+21:
+- How many layers in OSI model: 7
+
+22:
+- Know about about the OSI model
+
+23:
+- Know about mac addresses
+- How do switches learn the mac address
+
+24:
+three way handshake
+
+25:
+know about the arp command
+arp -a
+arp -d*
+
+26:
+What is the most reliable protocol for connection:
+HTTP
+DNS
+TCP
+UDP
+
+27:
+Know what TTL does.
+Max hops in WINDOWS: 128
+
+28:
+scenerio:
+whats the subnet mask of that scenerio?
+
+29:
+
+- know about the arp again
+- what does it do?
+
+30:
+- memorize the port numbers bro
+- FTP, TCP, DNS maybe on it
+
+31:
+OSI Model:
+- what layer deals with pictures and videos
+
+32:
+what layer deals with CRC
+
+33:
+know about the classes of ip addresses in binary
+1 - 126
+128 - 191
+192 - 223
+
+34:
+what class of ip, gives you equal networks and hosts
+
+35:
+how does the switch forward the frame to the destination
+
+36:
+picture question:
+same thing for the sba, when pc1 talks to pc2 what is the destination address between a hop
+
+37:
+when the switch is empty and two pcs want to talk together: if there is no entry, then it will broadcast to everyone but the pc sending the message
+
+38: know about udp:
+does not guarantee connection
+best effort
+connction-less
+
+39:
+gonna get a class C ip ip address, find how many usable hosts with the \cidr
+
+39:
+MDIX: auto cable, what does it do
+
+40:
+TCP/IP protocols:
+- ICMP
+
+41:
+know the well known ports
+0-1023 or 1024
+EUI-64
+
+42:
+socket programming again
+
+43:
+DHCP: know the sequence
+1. Computer looks for a DHCP Server: Discovery
+2. DHCP Offers you an IP: Offer
+3. Take the IP: Take
+
+44:
+Which device takes a default gateway
+
+45:
+OSI model, Application Protocols: know about them all
+
+46:
+Access methods
+Collision Avoidance and Collision Detection
+
+47:
+Know about congestion bits per second
+
+48:
+which organization gives you ip addresses IANA
+
+49:
+Definition of Ethernet
+
+50:
+Know about the port numbers again
+
+51:
+Cross-talk
+twisting wires to avoid cross talk
+
+52:
+what is the job of a router
+allows you to leave the network
+
+54:
+what is the job of a switch?
+full duplex
+smart device
+doesn't cause traffic
+
+55:
+when you are pinging ICMP
+
+56:
+when you send a signal from pcA to pcB find the mac address at this hop
+
+57:
+what is a topology:
+the physical layout of the network
+
+58:
+picture about wireshark
+"it's so obvious, you won't believe it"
+
+59:
+DLSN Subnetting

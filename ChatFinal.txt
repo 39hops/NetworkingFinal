@@ -1,0 +1,92 @@
+
+### **Subnetting and IP Details (Q1 - Q10)**
+1. **Subnet Mask and CIDR Notation (`/24`)**
+   - **Subnet Mask:** 255.255.255.0
+   - **CIDR Notation (/24):** Indicates 24 bits are used for the network.
+
+2. **Key Points:**
+   - **Usable IPs:** 2⁸ - 2 = 254 (subtract network and broadcast addresses).
+   - **First Usable Host:** Add 1 to the network IP (e.g., `192.168.0.1` for `192.168.0.0/24`).
+   - **Last Usable Host:** Subtract 1 from the broadcast IP (e.g., `192.168.0.254` for `192.168.0.255`).
+   - **Broadcast Address:** The last address in the range (e.g., `192.168.0.255`).
+   - **Bits Borrowed/Left:** From /24, borrowing none leaves 8 bits for hosts.
+   - **Max Subnets:** Depends on borrowed bits (e.g., borrowing 2 bits gives 4 subnets).
+
+---
+
+### **Socket Programming (Q11, Q19, Q42)**
+- Understand `Socket` and `SocketServer` concepts in Python/Java/C.
+- Basics: Establishing connections, listening, and sending data.
+
+---
+
+### **IPv6 and IPv4 (Q14 - Q20, Q33, Q34, Q36, Q39)**
+1. **IPv6:**
+   - **Address Structure:** 128 bits, split into 16-bit hexadecimal blocks.
+   - **Types:**
+     - **Unicast:** Single interface.
+     - **Multicast:** Multiple interfaces.
+     - **Anycast:** Closest interface.
+   - **Local Link:** `fe80::/64` used for devices in the same link.
+   - **Compression/Expansion:** `::` for zeros, remove leading zeros.
+   - **Validation:** Check proper format for valid/invalid addresses.
+
+2. **IPv4:**
+   - **Unicast, Multicast, Broadcast:** Understand differences.
+   - **Classes:**
+     - A (1-126), B (128-191), C (192-223).
+   - **CIDR and Usable Hosts:** E.g., `/24` → 256 - 2 = 254 hosts.
+
+---
+
+### **OSI Model (Q21, Q22, Q31, Q32, Q45)**
+1. **7 Layers:**
+   - Application, Presentation, Session, Transport, Network, Data Link, Physical.
+2. **Layer-Specific Tasks:**
+   - **Pictures/Videos:** Presentation Layer.
+   - **CRC (Error Checking):** Data Link Layer.
+   - **MAC Address Learning:** Data Link Layer.
+
+---
+
+### **Three-Way Handshake and ARP (Q24, Q25, Q29)**
+1. **TCP Three-Way Handshake:**
+   - SYN → SYN-ACK → ACK.
+2. **ARP (Address Resolution Protocol):**
+   - Resolves IP to MAC.
+   - Commands: `arp -a` (view cache), `arp -d` (clear entries).
+
+---
+
+### **Protocols, Ports, and Devices (Q26, Q30, Q50)**
+1. **Reliable Protocol:** TCP (connection-oriented).
+2. **Common Ports:**
+   - FTP (21), DNS (53), HTTP (80), HTTPS (443).
+3. **DHCP Process:**
+   - Discovery → Offer → Request → Acknowledge.
+
+---
+
+### **Wireshark and Networking Concepts (Q58, Q57, Q48)**
+1. **Wireshark Tips:**
+   - Look for obvious patterns like protocol headers.
+2. **Topology:**
+   - Physical (e.g., star, bus, mesh).
+3. **IANA:** Assigns IPs globally.
+
+---
+
+### **Other Key Terms (Cross-Talk, Ethernet, Switches, MDIX)**
+- **Cross-Talk:** Twisting wires reduces interference.
+- **Ethernet:** Defines network communication standards.
+- **Switches:** Operate in full-duplex, direct traffic.
+- **MDIX:** Auto-corrects cable type mismatches.
+
+---
+
+### Study Recommendations:
+1. Practice subnetting calculations thoroughly.
+2. Review key differences between IPv4 and IPv6.
+3. Memorize well-known port numbers and OSI layer functions.
+4. Go through examples of TCP/IP communication (e.g., DHCP, ARP).
+5. Familiarize yourself with common tools like Wireshark.
