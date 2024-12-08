@@ -1,0 +1,235 @@
+Q1 - Q10: 
+    - 192.168.2.12/24
+    - Make 20 subnets 
+Q1: How many useable IPs for that subnet mask:
+    - 2 ^ 3 - 2
+    - 6 useable networks per subnet 
+    - 32 * 6 = 192 useable hosts in all subnet
+
+Q2: First and last usable hosts for 192.168.2.0:
+    - 192.168.2.1 - 192.168.2.6
+
+Q3: Subnet Mask:
+    - 255.255.255.248 
+
+Q4: CIDR Notation:
+    - 192.166.2.12/31
+
+Q5: Broadcast for 192.168.2.8:
+    - 192.168.2.15
+
+Q6: How many bits borrowed?:
+    - 5
+
+Q7: How many bits left over for host?:
+    - 3
+
+Q8: How many useable hosts for 192.168.2.16:
+    - 6 
+
+Q9: Max number of subnets:
+    - 32 
+
+Q10?
+
+Q11-13: Socket Programming 
+
+Q14: What is the layer 2 broadcast?:
+    - FF:FF:FF:FF:FF:FF
+
+
+Q15: What are the transportation methods for IPv6s:
+    - Unicast 
+    - Multicast 
+    - Anycast 
+
+Q16: What are the transportation methods for IPv4s:
+    - Unicast
+    - Multicast 
+    - Broadcast 
+
+Q17: How many bits in an IPv6 hextet?:
+    - 16
+
+Q18: Which is not a valid IPv6?:
+    - 7849:d3ac:f0b0:9d6f:66fc:cf97:95b0:7a72
+    - 7849:d3ac:f0b0:0000:0000:cf97:95b0:7a72
+    - 7849:d3ac:f0b0:0:0:cf97:95b0:7a72
+    - 9417::d3ea:053c::83b6 # This is invalid 
+
+Q19: Socket Programming (Know about Socket & SocketServer)
+    
+Q20: Expand this IPv6: 849:d3ac:f0b0::97:95b0:a72:
+    - 0849:d3ac:f0b0:0000:0000:0097:95b0:0a72
+
+Q21: How many layers in the OSI model:
+    - 7
+    
+
+Q22: Know about the OSI model:
+    7. Application Layer: FTP, HTTP, DNS, TELNET, DHCP
+    6. Presentation Layer: Data Translation, Encryption, Compression, Authentication 
+    5. Session Layer: Controls connections between computers 
+    4. Transport Layer: TCP, UDP, 
+    3. Network Layer: Routers, IPv6, IPv4, ICMP 
+    2. Data Link Layer: Ethernet, Point-to-Point, LLC, CSMA/CD & CSMA/CA
+    1. Physical Layer 
+Q23: How do switches learn the MAC address:
+    - From the source address in the frame 
+
+Q24: Three-way handshake: 
+    - Client -> SYN -> Server 
+    - Client <- SYN/ACK <- Server 
+    - Client -> ACK -> Server
+    
+
+Q25A: What does arp -a do?:
+    - Displays current arp cache tables 
+
+Q25B: What does arp -d* do?:
+    - Deletes all entries in arp cache tables 
+
+Q26: Most reliable protocol for connections:
+    - TCP 
+
+Q27: What does TTL do?
+    - Limits the lifespan of a packet 
+    - Max TTL for windows is 128 
+
+Q28: What is the subnet mask of 192.168.1.0/24 with 3 subnets:
+    - 255.255.255.192
+
+Q29: What is the purpose of ARP?:
+    - To resolve an IP address to a MAC address 
+
+Q30: Know port numbers:
+    Port Number | Protocol | Application
+    ------------------------------------
+        20      |   TCP    |  FTP (Data)
+        21      |   TCP    |  FTP (Control)
+        22      |   TCP    |  Secure Shell (SSH)
+        23      |   TCP    |  TELNET
+        25      |   TCP    |  SMTP
+        53      | TCP, UDP |  DNS
+        67      |   UDP    |  DHCP - Server
+        68      |   UDP    |  DHCP - Client
+        69      |   UDP    |  TFTP - Trivial File Transfer Protocol
+        80      |   TCP    |  HTTP
+        110     |   TCP    |  POP3
+        143     |   TCP    |  IMAP
+        161     |   UDP    |  SNMP
+        443     |   TCP    |  HTTPS
+
+Q31: What layer deals with pictures and videos:
+    - Prob, Application Layer 
+
+Q32: What Layer deals with CRC:
+    - Data Link Layer 
+
+Q33: IP Class Ranges:
+    Class A:
+        - Range: 1 - 126 
+        - Binary Range: 00000001 - 011111111
+    Class B:
+        - Range: 128 - 191
+        - Binary Range: 10000000 - 10111111
+    Class C:
+        - Range: 192 - 223
+        - Binary Range: 11000000 - 11011111
+    
+Q34: What class of IP gives you equal networks and hosts?:
+    - Class B 
+
+Q35: How does the switch forward the frame to the destination device:
+    - By using the destination MAC address 
+
+Q36: Picture Question, like SBA question, asks what is the IP/MAC address at this hop 
+
+Q37: What happens when the switch has no entry for the destination MAC address:
+    - It will broadcast to everyone but the PC sending the message
+
+Q38: Know about UDP:
+    - Does NOT guarantee connection 
+    - Best effort 
+    - Connection-less 
+
+Q39: How many usable hosts are there in 192.168.1.1/27:
+    - 3 bits used for network 
+    - 5 bits left over for host 
+    - 2 ^ 5 - 2= 30 
+    - 2 ^ 3 = 8 
+    - 8 * 30 = 240
+    - 240
+
+Q40: What does auto-MDIX do?:
+    - Detects the required cable connection type and configures the connection appropriately.
+
+Q41: Know TCP/IP Stacks:
+    4. Application Layer:
+        - DNS 
+        - FTP
+        - HTTP
+        - IMAP 
+        - POP3 
+        - SMTP 
+        - SSH 
+        - TELNET 
+        - SSL 
+    3. Transport Layer: 
+        - TCP 
+        - UDP 
+    2. Network Layer:
+        - IPv4, IPv6
+        - ICMP
+        - ARP 
+    1. Data Link Layer:
+        - Ethernet 802.3, 802.11 (Wi-fi)
+        - PPP (Point-to-Point)
+
+Q42: Socket Programming...
+
+Q43: What is the DHCP Sequence:
+    - Discovery -> Offer -> Take 
+
+Q44: What device takes a default gateway?:
+    - Probably a Router 
+
+Q45: Application Layer Protocols:
+    - DNS, FTP, HTTP, IMAP, POP3, SMTP, SSH, TELNET, SSL 
+
+Q46: What are the two different types of access methods:
+    - CSMA/CD & CSMA/CA 
+
+Q47: What is Network Congestion:
+    - When a network is over-whelmed with more packets than it can handle.
+
+Q48: What ORG gives you IP addresses:
+    - IANA 
+
+Q49: What is the definition of Ethernet:
+    - Technology for connection devices in a WLAN or LAN 
+
+Q50: Port Numbers Again:
+
+Q51: What is done to avoid cross-talk?:
+    - Twisting of wires 
+
+Q52: What is the job of a router:
+    - Manages traffic between networks 
+
+Q53: ? 
+
+Q55: What is the job of a switch?:
+    - Forwards data packets between devices directly 
+
+Q56: What protocol is used when you are pinging:
+    - ICMP 
+
+Q57: What is a topology:
+    - The physical layout of a network 
+
+Q58: Picture question again.
+
+Q59: Picture about a Wireshark frame.
+
+Q60: DLSN subnetting...
